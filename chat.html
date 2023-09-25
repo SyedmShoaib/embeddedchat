@@ -1,6 +1,5 @@
 <html>
-	
-<style type='text/css'>
+	<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -35,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://empathetic-raccoon-bi9vr-dev-ed.trailblaze.my.salesforce.com',
-			'https://empathetic-raccoon-bi9vr-dev-ed.trailblaze.my.site.com/',
+			'https://alixergroup.my.salesforce.com',
+			'https://alixergroup.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00D2w00000RppfY',
-			'New_Chat_Group',
+			'00DDo000001Cp6L',
+			'Chat_Group',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c2-ukb.salesforceliveagent.com/content',
-				deploymentId: '5722w000000kffW',
-				buttonId: '5732w000000kh7C',
-				baseLiveAgentURL: 'https://d.la2-c2-ukb.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'New_Chat_Group',
+				baseLiveAgentContentURL: 'https://c.la1-c2-ia7.salesforceliveagent.com/content',
+				deploymentId: '572Do000000TbQT',
+				buttonId: '573Do000000TbRM',
+				baseLiveAgentURL: 'https://d.la1-c2-ia7.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Chat_Group',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -53,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://empathetic-raccoon-bi9vr-dev-ed.trailblaze.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://alixergroup.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -62,4 +61,7 @@
 		initESW('https://service.force.com');
 	}
 </script>
-	</html>
+</html>
+	
+
+		
