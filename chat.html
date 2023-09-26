@@ -34,25 +34,25 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://alixergroup.my.salesforce.com',
-			'https://alixergroup.my.salesforce-sites.com/liveAgentSetupFlow',
+			'https://in1695728626968.my.salesforce.com',
+			'https://in1695728626968.my.site.com/old',
 			gslbBaseURL,
-			'00DDo000001Cp6L',
-			'Chat_Group',
+			'00DHu000001AI2H',
+			'Salesforce_Support',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c2-ia7.salesforceliveagent.com/content',
-				deploymentId: '572Do000000TbQT',
-				buttonId: '573Do000000TbRM',
-				baseLiveAgentURL: 'https://d.la1-c2-ia7.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Group',
-				isOfflineSupportEnabled: true
+				baseLiveAgentContentURL: 'https://c.la3-c2-ia7.salesforceliveagent.com/content',
+				deploymentId: '572Hu0000005NbV',
+				buttonId: '573Hu0000005Oy7',
+				baseLiveAgentURL: 'https://d.la3-c2-ia7.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Salesforce_Support',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://alixergroup.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://in1695728626968.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
@@ -62,6 +62,3 @@
 	}
 </script>
 </html>
-	
-
-		
